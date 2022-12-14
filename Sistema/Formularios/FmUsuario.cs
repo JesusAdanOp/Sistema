@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema
+namespace Sistema.Formularios
 {
-    public partial class Form1 : Form
+    public partial class FmUsuario : Form
     {
-        public Form1()
+        public FmUsuario()
         {
             InitializeComponent();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            Formularios.FmMenu x = new Formularios.FmMenu();
+            x.Show(); this.Hide();
         }
     }
 }
